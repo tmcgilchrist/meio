@@ -1,7 +1,7 @@
 open Eio
 
 let main clock =
-  Eio.Switch.run ~name:"main context" @@ fun sw ->
+  Eio.Switch.run ~name:"main context" @@ fun _sw ->
   (* Eio.Fiber.fork ~sw (fun () ->
       Eio.Time.sleep clock 1.0;
       traceln "this is a forked function";
